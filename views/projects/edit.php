@@ -22,13 +22,14 @@ if( !empty($_GET['id']) ) {
     require_once('../elements/nav.php');
 ?>
 
-<div class="container">
+<div class="container pt-4 pb-4">
+
     <div class="row">
-        <div class="col-md-8">
-            <div class="card mt-4">
-                <div class="card-header">
+        <div class="col-md-9 mx-auto pb-5">
+            <div class="card mt-4 create" id="shareProjectCard">
+                <div class="card-header create-title">
+
                     <h4>Edit Project</h4>
-            
                 </div>
 
                 <div class="card-body">
@@ -49,15 +50,18 @@ if( !empty($_GET['id']) ) {
                                 <textarea class="form-control" name="description" placeholder="MOC Description" required><?=$project['description']?></textarea>
                             </div>
 
-                            <div class="form-group text-right">
-                                <button type="submi"t class="btn btn-outline-warning">Update MOC!</button>
+                            <div class="editBack">
+                                <button type="submit" class="back-btn"><img src="../images/back_button.png" class="back-btn"></button>
+                    
+                   
+                                <button type="submit" class="update-btn float-right"><img src="../images/updatemoc_button.png" class="update-btn"></button>
                             </div>
                     </form>
                 </div>
-            </div>
-        </div>
+         </div>
     </div>
 </div>
+
 
 
 <?php

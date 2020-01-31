@@ -174,6 +174,28 @@ body {
 
 /* End of SIGNIN/LOGIN PAGE */
 
+/* EDIT USERS POST PAGE */
+
+.updatemoc-btn {
+    margin-left: 100px;
+    width: 45%;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    transition: 0.5s;
+}
+
+.updatemoc-btn:hover {
+    transform: translateY(-5px);
+}
+
+
+/* End of USERS EDIT POST PAGE */
+
 /* LOGIN USER INDEX PAGE */
 
 .create {

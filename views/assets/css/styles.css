@@ -175,6 +175,27 @@ body {
 }
 
 /* End of SIGNIN/LOGIN PAGE */
+/* EDIT USERS POST PAGE */
+.updatemoc-btn {
+  margin-left: 100px;
+  width: 45%;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.updatemoc-btn:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+/* End of USERS EDIT POST PAGE */
 /* LOGIN USER INDEX PAGE */
 .create {
   background-image: url("/images/red lego background.jpg");

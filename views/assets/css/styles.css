@@ -29,12 +29,22 @@ body {
   position: absolute;
   left: 0;
   top: 100%;
-  color: #FACF49;
 }
 
 .form-control {
   border-color: #FACF49;
   border-radius: 2em;
+}
+
+.custom-file-input {
+  background-color: #FACF49 !important;
+  border-radius: 20px;
+}
+
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+  background-color: #FACF49 !important;
+  color: white;
+  border-radius: 25px 1px 1px 25px;
 }
 
 /* SIGNIN/LOGIN PAGE */

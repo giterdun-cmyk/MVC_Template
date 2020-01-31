@@ -60,9 +60,14 @@ if( !empty($_GET['id']) ) {
                 </div>
          </div>
     </div>
+
+    
+
+
 </div>
 
 
+<img src="../images/Image 11.png" class="lego1">
 
 <?php
     require_once('../elements/footer.php');

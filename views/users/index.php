@@ -42,9 +42,12 @@
                         <?php
                             if($selected_user['id'] == $_SESSION['user_logged_in']) {
                         ?>
-                        <p>
-                            <a href="/users/edit.php" class="edit-btn"><img src="../images/edit_button.png" class="edit-btn"></a>
-                        </p>
+                        <div class="editBack">
+                            <button type="submit" class="back-btn"><img src="../images/back_button.png" class="back-btn"></button>
+                    
+                   
+                            <button type="submit" class="update-btn float-right"><img src="../images/updatemoc_button.png" class="update-btn"></button>
+                        </div>
                         <?php
                             }
                         ?>

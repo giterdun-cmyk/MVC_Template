@@ -43,10 +43,12 @@
                             if($selected_user['id'] == $_SESSION['user_logged_in']) {
                         ?>
                         <div class="editBack">
-                            <button type="submit" class="back-btn"><img src="../images/back_button.png" class="back-btn"></button>
-                    
-                   
-                            <button type="submit" class="update-btn float-right"><img src="../images/updatemoc_button.png" class="update-btn"></button>
+                            <p>
+                                <a href="/" class="back-btn float-left"><img src="../images/back_button.png" class="back-btn2"></a>
+                            
+                                <a href="/users/edit.php" class="update-btn float-right"><img src="../images/edit_button.png" class="update-btn2"></a>
+                            </p>
+                            
                         </div>
                         <?php
                             }

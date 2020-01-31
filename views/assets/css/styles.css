@@ -312,6 +312,46 @@ hr {
 }
 
 /* Edit Page Stylings */
+.back-btn2 {
+  width: 60%;
+  background: none;
+  color: inherit;
+  border: none;
+  margin-top: 15px;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 50px;
+}
+
+.back-btn2:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.update-btn2 {
+  width: 60%;
+  background: none;
+  color: inherit;
+  border: none;
+  margin-top: 15px;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 30px;
+}
+
+.update-btn2:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
 /**********************/
 .edit-btn {
   width: 25%;

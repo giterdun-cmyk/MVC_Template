@@ -1,0 +1,397 @@
+body {
+    background-image: url("/images/lego_background.jpeg");
+    background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+    background-size:  cover;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.drop {
+    background-image: url("/images/green lego background.jpg");
+    background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+    background-size:  cover;
+
+    .a {
+        color: white;
+    }
+}
+
+#search_form {
+    position: relative;
+    z-index: 100;
+
+    #search_results {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        color: #FACF49; // Not working#@$@#$#@$@#
+    }
+}
+
+.form-control {
+    border-color: #FACF49;
+    border-radius: 2em;
+}
+
+/* SIGNIN/LOGIN PAGE */
+
+.sign {
+    background-image: url("/images/green lego background.jpg");
+    background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+    background-size:  cover;
+    border-color: #4DA965;
+}
+
+.log {
+    background-image: url("/images/red lego background.jpg");
+    background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+    background-size:  cover;
+    border-color: #DC4837;
+}
+
+.info {
+    background-image: url("/images/red lego background.jpg");
+    background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+    background-size:  cover;
+    border-color: #DC4837;
+}
+
+.info1 {
+    background-image: url("/images/green lego background.jpg");
+    background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+    background-size:  cover;
+}
+
+.log-title {
+    background-color: #E02E2B;
+    color: white;
+    border-radius: 3px;
+    padding: 10px;
+    background-attachment: fixed;
+    background-size:  cover;
+    margin-bottom: 15px;
+}
+
+.signup {
+    color: white;
+    background-color: #4EAD64;
+    border-radius: 3px;
+    padding: 10px;
+    background-attachment: fixed;
+    background-size:  cover;
+    margin-bottom: 15px;
+}
+
+.sign-title {
+    background-color: #4EAD64;
+    color: white;
+    border-radius: 3px;
+    padding: 10px;
+    background-attachment: fixed;
+    background-size:  cover;
+    margin-bottom: 15px;
+}
+
+.accordion {
+    width: 500px;
+    padding: 23px;
+    
+}
+
+.card {
+    border: 0;
+    background-color: transparent;
+}
+
+.remember {
+    color: white;
+}
+
+.login-btn {
+    margin-left: 100px;
+    width: 55%;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    transition: 0.5s;
+}
+
+.login-btn:hover {
+    transform: translateY(-5px);
+}
+
+.create-btn {
+    margin-left: 100px;
+    width: 55%;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    transition: 0.5s;
+}
+
+.create-btn:hover {
+    transform: translateY(-5px);
+}
+
+.lego1 {
+    position: relative;
+    top: -150px;
+    left: 1210px;
+    width: 450px;
+    margin: -400px;
+}
+
+.logo {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-danger {
+    color: yellow !important;
+}
+
+/* End of SIGNIN/LOGIN PAGE */
+
+/* LOGIN USER INDEX PAGE */
+
+.create {
+    background-image: url("/images/red lego background.jpg");
+    background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+    background-size:  cover;
+}
+
+.create-title {
+    background-color: #E02E2B;
+    color: white;
+    border-radius: 3px;
+    padding: 10px;
+    background-attachment: fixed;
+    background-size:  cover;
+    margin-bottom: 15px;
+}
+
+.project-post {
+    background-color: white;
+   
+}
+
+.welcome {
+    color: white;
+    background-image: url("/images/green lego background.jpg");
+    background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+    background-size:  cover;
+}
+
+.post-btn {
+    margin-left: 100px;
+    width: 45%;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    transition: 0.5s;
+}
+
+.post-btn:hover {
+    transform: translateY(-5px);
+}
+
+.lego2 {
+    position: absolute;
+    z-index: 99;
+    top: 60px;
+    left: -30px;
+    width: 350px;
+   
+}
+
+/* END of USER INDEX PAGE */
+
+/* EDIT PROFILE PAGE */
+
+.lego3 {
+    position: relative;
+    top: 145px;
+    left: 420px;
+    width: 450px;
+    margin: -400px;
+}
+
+.edit_card {
+    background: rgba(255, 255, 255, 0.712);
+    border-radius: 5px;
+}
+
+
+/* End of EDIT PROFILE PAGE */
+
+
+.accordion .card-header {
+    cursor: pointer;
+}
+
+hr {
+    clear: both;
+    margin-top: 1em;
+}
+
+.project-meta {
+    padding-bottom: 1em;
+    &:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
+
+.comment-loop {
+    max-height: 200px;
+    overflow-y: scroll;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    padding: 1em;
+    display: none;
+
+    .comment-username {
+        display: block;
+        opacity: 0.75;
+        font-size: 60%;
+        color: rgb(255, 0, 0);
+    }
+
+    .my_comment {
+        text-align: right;
+        
+    }
+}
+
+/* Edit Page Stylings */
+
+
+/**********************/
+
+
+
+.edit-btn {
+    width: 25%;
+    background: none;
+	color: inherit;
+    border: none;
+    margin-top: 15px;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    transition: 0.5s;
+}
+
+.edit-btn:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Edit Page */
+
+.back-btn {
+    width: 45%;
+    background: none;
+	color: inherit;
+    border: none;
+    margin-top: 15px;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    transition: 0.5s;
+}
+
+.back-btn:hover {
+    transform: translateY(-5px);
+}
+
+.update-btn {
+    width: 45%;
+    background: none;
+	color: inherit;
+    border: none;
+    margin-top: 15px;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    transition: 0.5s;
+}
+
+.update-btn:hover {
+    transform: translateY(-5px);
+}
+
+/* End of Edit Page */
+
+/* User Profile Page */
+
+.profile_pic {
+    max-width: 175px;
+    border-radius: 50%;
+    
+}
+
+.profile_projects {
+    background: white;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0);
+    border-color: yellow;
+}
+
+
+.card-deck {
+    
+    .card-image {
+        overflow: hidden;
+
+        img {
+           object-fit: cover;
+           height: 180px;
+           
+        }
+
+        .card-title {
+            position: absolute;
+            z-index: 10;
+            top: 1rem;
+            left: 0;
+            background: rgba(255,255,255, 0.8);
+            padding: 10px;
+        }
+    }
+}
+
+/* End of Profile Page */

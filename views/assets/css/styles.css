@@ -36,6 +36,10 @@ body {
   border-radius: 2em;
 }
 
+.spy-head {
+  width: 20px;
+}
+
 .custom-file-input {
   background-color: #FACF49 !important;
   border-radius: 20px;
@@ -186,6 +190,14 @@ body {
   color: yellow !important;
 }
 
+.love-icon {
+  width: 20px;
+}
+
+.fas {
+  color: #308a48 !important;
+}
+
 /* End of SIGNIN/LOGIN PAGE */
 /* EDIT USERS POST PAGE */
 .updatemoc-btn {
@@ -205,6 +217,27 @@ body {
 .updatemoc-btn:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
+}
+
+.welcomeindex {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.welcome-title {
+  background-color: #4EAD64;
+  color: white;
+  border-radius: 13px;
+  padding: 12px;
+  padding-left: 44px;
+  padding-right: 44px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 15px;
 }
 
 /* End of USERS EDIT POST PAGE */
@@ -233,11 +266,6 @@ body {
 
 .welcome {
   color: white;
-  background-image: url("/images/green lego background.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .post-btn {

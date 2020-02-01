@@ -24,7 +24,19 @@
     } else {
         ?>
 
-        <h1 class="welcome mx-auto">Welcome to <?=APP_NAME?></h1>
+        <div class="row">
+            <div class="col-md-9 mx-auto pb-5">
+                <div class="card mt-4 welcomeindex" id="shareProjectCard">
+                    <div class="card-header mx-auto welcome-title">
+                        <h1 class="welcome pl-3">Welcome to <?=APP_NAME?></h1>
+                        <div class="text-center">
+                            <img src="/images/lego-head.png" class="w-25">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <?php
 
@@ -119,9 +131,9 @@
                                 <img src="<?=$love_url?>" class="love-icon">
                                 <span class="love-count"><?=$project['love_count']?></span>
                             </span>
-
+                           
                             <span class="float-right comment-btn mr-2">
-                                <i class="far fa-comment"></i>
+                                <i class="fas fa-comment-dots fa-lg"></i>
                                 <span class="comment-count"><?php
                                     echo $c_model->get_count($project['id']);
                                 ?></span>

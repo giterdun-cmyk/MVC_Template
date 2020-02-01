@@ -53,11 +53,14 @@ $(document).ready(function(){
 
                 if(love_results.error == false){ // loved worked!!!
                     if( love_results.loved == 'loved' ) {
-                        love_icon.removeClass('far').addClass('fas')
+                        // love_icon.removeClass('far').addClass('fas')
+                        love_icon.attr("src", "/images/happy-lego-face.png")
                         love_count.html(love_results.love_count);
                     }
                     else if( love_results.loved == 'unloved' ) {
-                        love_icon.removeClass('fas').addClass('far')
+
+                        //love_icon.removeClass('fas').addClass('far')
+                        love_icon.attr("src", "/images/unliked-happy-lego-face.png")
                         love_count.html(love_results.love_count);
                     }
                 }
@@ -231,3 +234,4 @@ $(document).ready(function(){
 
 
 });
+

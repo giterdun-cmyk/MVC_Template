@@ -21,6 +21,33 @@ class Util extends DB {
 
             }
             
+// BELOW IS NEW CODE FOR MULTI UPLOAD
+        
+            if(is_array($_FILES[$inputNameAttr]['name'])) {
+                $i = 0;
+                foreach($_FILES[$inputNameAttr]['name'] as $multi_file_name) {
+
+                    $filename =  time() . basename($multi_file_name);
+                    $target_file  = $target_dir . $_SESSION['user_logged_in'] . "/" . $filename;
+                    $check = getimagesize($_FILES[$inputNameAttr]["tmp_name"][$i]);
+                    $i++;
+
+                }
+
+            } else {
+
+                $filename = time() . basename($_FILES[$inputNameAttr]['name']);
+                $target_file  = $target_dir . $_SESSION['user_logged_in'] . "/" . $filename;
+                
+                 // Checks the image size, BUT, if not an image, will return an error
+                $check = getimagesize($_FILES[$inputNameAttr]["tmp_name"]);
+
+            }
+
+
+
+// ^^^ ALL NEW CODE
+
             $filename =  time() . basename($_FILES[$inputNameAttr]['name']);
             $target_file  = $target_dir . $_SESSION['user_logged_in'] . "/" . $filename;
 

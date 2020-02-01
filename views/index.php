@@ -50,7 +50,7 @@
                         <form action="/projects/add.php" method="post" enctype="multipart/form-data">
                             <img id="img-preview" class="w-100">
                             <div class="form-group custom-file">
-                                <input class="custom-file-input" id="file-with-preview" type="file" name="fileToUpload" class="form-control" required>
+                                <input class="custom-file-input" id="file-with-preview" type="file" name="fileToUpload[]" class="form-control" multiple required>
                                 <label class="custom-file-label">Upload Creation</label>
                             </div>
                             <div class="form-group mt-3">
@@ -107,16 +107,16 @@
                             
                         <div class="card-footer">
                             <?php
-                                $love_class = "far";
+                                $love_url = "/images/unliked-happy-lego-face.png";
                                 if(!empty($project['love_id'])) {
-                                    $love_class = 'fas';
+                                    $love_url = '/images/happy-lego-face.png';
                                 }
                                 ?>
 
                         <div class="project-meta">
 
                             <span class="love-btn float-right" data-project="<?=$project['id']?>">
-                                <i class="<?=$love_class?> fa-heart text-danger love-icon"></i>
+                                <img src="<?=$love_url?>" class="love-icon">
                                 <span class="love-count"><?=$project['love_count']?></span>
                             </span>
 
@@ -186,7 +186,16 @@
     }
     ?>
 
+
+<?php
+    if( !empty($_SESSION['user_logged_in']) ) {
+?>
+
 <img src="../images/Image 9.png" class="lego2">
+
+<?php
+    }
+?>
 
 </div>
 

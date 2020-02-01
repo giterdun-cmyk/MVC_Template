@@ -38,7 +38,9 @@
                         <p><?=$selected_user['firstname']. " ". $selected_user['lastname'];?></p>
                         <p><?=$selected_user['email']?></p>
                         <p><?=$selected_user['bio']?></p>
-                        <img id="img-preview" class="profile_pic" src="<?=$selected_user['profile_pic']?>">
+                        <div class="image-cropper">
+                            <img id="img-preview" class="profile_pic" src="<?=$selected_user['profile_pic']?>">
+                        </div>
                         <?php
                             if($selected_user['id'] == $_SESSION['user_logged_in']) {
                         ?>
@@ -104,7 +106,12 @@
 
 </div>
 
+
 <img src="../images/Image 7.png" class="lego3">
+
+
+
+
 
 <?php
     require_once("../elements/footer.php");

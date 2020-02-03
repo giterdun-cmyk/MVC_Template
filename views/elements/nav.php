@@ -32,7 +32,7 @@
         <ul class="navbar-nav ml-auto">
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="accountDropdown" data-toggle="dropdown">Welcome <?=$current_user['firstname']?> <img src="/images/spy-head.png" class="spy-head pb-1"></a>
+                    <a class="nav-link dropdown-toggle" id="accountDropdown" data-toggle="dropdown">Welcome <?=$current_user['firstname']?>  <img src="/images/spy-head.png" class="spy-head pb-1"></a>
                     <div class="dropdown-menu drop">
                         <a class="dropdown-item" href="/users/">My Profile</a>
                         <a class="dropdown-item" href="/users/logout.php">Logout</a>

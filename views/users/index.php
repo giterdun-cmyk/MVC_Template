@@ -24,7 +24,7 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-md-6 mx-auto">
-                    <h2>My Profile</h2>
+                    <h2>MY PROFILE</h2>
                     <div>
 
                         <?php

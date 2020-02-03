@@ -25,7 +25,7 @@
 <div class="card-body">
     <div class="row">
         <div class="col-md-8 mx-auto">
-            <h2 class="pt-3">Edit Profile</h2>
+            <h2 class="pt-3">EDIT PROFtLE</h2>
             
             <form method="post" enctype="multipart/form-data">
                 <div class="pt-3">

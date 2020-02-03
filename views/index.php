@@ -28,7 +28,7 @@
             <div class="col-md-9 mx-auto pb-5">
                 <div class="card mt-4 welcomeindex" id="shareProjectCard">
                     <div class="card-header mx-auto welcome-title">
-                        <h1 class="welcome pl-3">Welcome to <?=APP_NAME?></h1>
+                        <h1 class="welcome pl-4">WELCOME TO <?=APP_NAME?></h1>
                         <div class="text-center">
                             <img src="/images/lego-head.png" class="w-25">
                         </div>
@@ -55,8 +55,8 @@
         <div class="row">
             <div class="col-md-9 mx-auto pb-5">
                 <div class="card mt-4 create" id="shareProjectCard">
-                    <div class="card-header create-title">
-                        <h4>Share your new Creation!</h4>
+                    <div class="card-header create-title pt-3 pl-3">
+                        <h3>SHARE YOUR NEW CREATION!<img src="/images/superman.png" class="superman"></h3>
                     </div>
                     <div class="card-body">
                         <form action="/projects/add.php" method="post" enctype="multipart/form-data">

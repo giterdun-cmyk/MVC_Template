@@ -10,7 +10,7 @@ body {
 
 
 .drop {
-    background-image: url("/images/green lego background.jpg");
+    background-color: #FACF49;
     background-position: center center;
 	background-repeat:  no-repeat;
 	background-attachment: fixed;
@@ -20,6 +20,7 @@ body {
         color: white;
     }
 }
+
 
 #search_form {
     position: relative;
@@ -40,6 +41,16 @@ body {
 .spy-head {
     width: 20px;
 }
+
+@font-face {
+    font-family: lego;
+    src: url(/assets/fonts/Legothick.ttf);
+}
+
+h1, h2, h3 {
+    font-family: lego, Arial, Helvetica, sans-serif;
+}
+
 
 //Edit profile
 .custom-file-input {
@@ -265,8 +276,41 @@ body {
 }
 
 .project-post {
-    background-color: white;
+    background-color: #ebebeb;
    
+}
+
+.superman {
+    width: 10%;
+}
+
+
+/* unvisited link */
+a:link {
+    color: #4EAD64;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #4EAD64;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #FACF49;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #4EAD64;
+    text-decoration: none;
+  }
+
+#accountDropdown {
+    color: white;
 }
 
 .welcome {

@@ -270,7 +270,7 @@ h1, h2, h3 {
 }
 
 .project-post {
-  background-color: #ebebeb;
+  background-color: #ebebebf1;
 }
 
 .superman {
@@ -351,6 +351,10 @@ a:active {
   border-radius: 5px;
 }
 
+.editBack {
+  padding-top: 75px;
+}
+
 /* End of EDIT PROFILE PAGE */
 .accordion .card-header {
   cursor: pointer;
@@ -390,6 +394,10 @@ hr {
 
 .comment-loop .my_comment {
   text-align: right;
+}
+
+.legoshark {
+  width: 10%;
 }
 
 /* Edit Page Stylings */
@@ -495,8 +503,9 @@ hr {
 /* End of Edit Page */
 /* User Profile Page */
 .profile_pic {
-  max-width: 175px;
-  border-radius: 75%;
+  max-width: 125px;
+  border-radius: 50%;
+  margin-left: 50px;
 }
 
 .profile_projects {

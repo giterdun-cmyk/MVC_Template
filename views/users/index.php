@@ -19,12 +19,15 @@
 
 ?>
 
-<div class="container col-md-8 pt-5">
+<div class="container pt-5">
     <div class="card edit_card">
         <div class="card-body">
             <div class="row">
                 <div class="col-md-6 mx-auto">
-                    <h2>MY PROFILE</h2>
+                    <h2>MY PROFILE<img src="/images/legoshark.png" class="legoshark"></h2>
+                    
+                    <img id="img-preview" class="profile_pic float-right" src="<?=$selected_user['profile_pic']?>">
+                        
                     <div>
 
                         <?php
@@ -38,17 +41,15 @@
                         <p><?=$selected_user['firstname']. " ". $selected_user['lastname'];?></p>
                         <p><?=$selected_user['email']?></p>
                         <p><?=$selected_user['bio']?></p>
-                        <div class="image-cropper">
-                            <img id="img-preview" class="profile_pic" src="<?=$selected_user['profile_pic']?>">
-                        </div>
+                        
                         <?php
                             if($selected_user['id'] == $_SESSION['user_logged_in']) {
                         ?>
                         <div class="editBack">
                             <p>
-                                <a href="/" class="back-btn float-left"><img src="../images/back_button.png" class="back-btn2"></a>
+                                <a href="/" class="back-btn float-left pt-5"><img src="../images/back_button.png" class="back-btn2"></a>
                             
-                                <a href="/users/edit.php" class="update-btn float-right"><img src="../images/edit_button.png" class="update-btn2"></a>
+                                <a href="/users/edit.php" class="update-btn float-right pt-5"><img src="../images/edit_button.png" class="update-btn2"></a>
                             </p>
                             
                         </div>

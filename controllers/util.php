@@ -68,10 +68,10 @@ class Util extends DB {
             }
 
             // Check the file size
-            $allowedSize = 5000000;
+            $allowedSize = 10000000;
             if($_FILES[$inputNameAttr]['size'] > $allowedSize) {
                 $file_upload['file_upload_error_status'] = 1;
-                $file_upload['errors'][] = "File too big. Limit is " . ($allowedSize / 1000000) . "MB";
+                $file_upload['errors'][] = "File too big. Limit is " . ($allowedSize / 10000000) . "MB";
             }
 
             // Check the file type

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 03, 2020 at 06:11 PM
+-- Generation Time: Feb 03, 2020 at 10:46 PM
 -- Server version: 5.7.25
 -- PHP Version: 7.3.1
 
@@ -81,7 +81,13 @@ INSERT INTO `comments` (`id`, `comment`, `posted_time`, `project_id`, `user_id`)
 (108, '123', '2020-01-27 00:01:52', 21, 9),
 (109, 'Wow cool bionicle!', '2020-01-28 03:48:38', 23, 9),
 (110, 'thats a good looking toa', '2020-01-29 22:34:31', 31, 14),
-(111, 'wow', '2020-02-01 20:35:57', 34, 17);
+(111, 'wow', '2020-02-01 20:35:57', 34, 17),
+(112, 'love code', '2020-02-03 20:32:04', 33, 17),
+(113, 'comment', '2020-02-03 20:39:21', 34, 17),
+(114, 'Well played', '2020-02-03 20:45:49', 33, 17),
+(115, 'wowza', '2020-02-03 20:59:02', 33, 17),
+(116, 'wow', '2020-02-03 21:18:08', 34, 17),
+(117, 'wow', '2020-02-03 21:18:31', 34, 17);
 
 -- --------------------------------------------------------
 
@@ -134,7 +140,10 @@ INSERT INTO `loves` (`id`, `user_id`, `project_id`) VALUES
 (69, 16, 34),
 (106, 17, 33),
 (119, 17, 28),
-(120, 17, 34);
+(121, 17, 32),
+(122, 17, 31),
+(123, 17, 30),
+(124, 17, 34);
 
 -- --------------------------------------------------------
 
@@ -182,18 +191,6 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `username`, `email`, `firstname`, `lastname`, `password`, `bio`, `profile_pic`) VALUES
-(12, 'zxc', 'zxc@gmail.ca', 'zxc', 'zxc', '$2y$10$IBGND8.sYOBgvW5nisPoHereiWl5RYvKrUzkbrPbEfrfMQu5uvZ0C', 'zxc', '/uploads/12/1580331820parker.png'),
-(13, 'asd', 'asd@gmail.ca', 'asd', 'asd', '$2y$10$NTEFvsw55GjVVsC29cmeR.GpO3Ia4cHlRY2kwspysaW9nZ28enCWa', 'asd', NULL),
-(14, '123', '123@gmail.ca', '123', '123', '$2y$10$.xzquotYGpv2TkMEfl/vLuSq7jPZlVZe.nBi.97JkCpfRHzbRba7O', '123', '/uploads/14/1580335381Screen Shot 2019-11-20 at 1.06.13 PM.png'),
-(15, '321', '321@gmail.ca', '321', '3213', '$2y$10$mnvAIFOINE.YHMY0yufP6uKAESIOcUp9vyAnQoBJ3z7QXhIqRCFpK', '121', NULL),
-(16, 'bam', 'bam@gmail.ca', 'bam', 'bambi', '$2y$10$ELw5euh88.h9l7UpCZ1tguJPickEPVAb/u5VLCoNOEaedMPG4IKgi', 'bambi got shot', '/uploads/16/1580497967Parker.jpg'),
-(17, 'lkj', 'lkj@lkj.ca', 'lkj', 'lkj', '$2y$10$82mShIugWyyDnSCpFhiBNONveloulC.bW.O/6GUgeZbxsrNdivfme', 'lkj', NULL);
-
---
 -- Indexes for dumped tables
 --
 
@@ -235,7 +232,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=112;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=118;
 
 --
 -- AUTO_INCREMENT for table `images`
@@ -247,7 +244,7 @@ ALTER TABLE `images`
 -- AUTO_INCREMENT for table `loves`
 --
 ALTER TABLE `loves`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=125;
 
 --
 -- AUTO_INCREMENT for table `projects`

@@ -20,30 +20,6 @@ class Util extends DB {
                 mkdir($target_dir . $_SESSION['user_logged_in']);
 
             }
-            
-// BELOW IS NEW CODE FOR MULTI UPLOAD
-        
-            if(is_array($_FILES[$inputNameAttr]['name'])) {
-                $i = 0;
-                foreach($_FILES[$inputNameAttr]['name'] as $multi_file_name) {
-
-                    $filename =  time() . basename($multi_file_name);
-                    $target_file  = $target_dir . $_SESSION['user_logged_in'] . "/" . $filename;
-                    $check = getimagesize($_FILES[$inputNameAttr]["tmp_name"][$i]);
-                    $i++;
-
-                }
-
-            } else {
-
-                $filename = time() . basename($_FILES[$inputNameAttr]['name']);
-                $target_file  = $target_dir . $_SESSION['user_logged_in'] . "/" . $filename;
-                
-                 // Checks the image size, BUT, if not an image, will return an error
-                $check = getimagesize($_FILES[$inputNameAttr]["tmp_name"]);
-
-            }
-
 
 
 // ^^^ ALL NEW CODE
@@ -68,7 +44,8 @@ class Util extends DB {
             }
 
             // Check the file size
-            $allowedSize = 10000000;
+
+            $allowedSize = 1000000000;
             if($_FILES[$inputNameAttr]['size'] > $allowedSize) {
                 $file_upload['file_upload_error_status'] = 1;
                 $file_upload['errors'][] = "File too big. Limit is " . ($allowedSize / 10000000) . "MB";

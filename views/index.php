@@ -62,7 +62,7 @@
                         <form action="/projects/add.php" method="post" enctype="multipart/form-data">
                             <img id="img-preview" class="w-100">
                             <div class="form-group custom-file">
-                                <input class="custom-file-input" id="file-with-preview" type="file" name="fileToUpload[]" class="form-control" multiple required>
+                                <input class="custom-file-input" id="file-with-preview" type="file" name="fileToUpload" class="form-control" multiple required>
                                 <label class="custom-file-label">Upload Creation</label>
                             </div>
                             <div class="form-group mt-3">
